@@ -20,13 +20,13 @@ ribbon:
 
 spring:
   host: 127.0.0.1
-        port: 5672
-        username: guest
-        password: guest
-        listener:
-          concurrency: 10
-          max-concurrency: 20
-          prefetch: 5
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+    concurrency: 10
+    max-concurrency: 20
+    prefetch: 5
   sleuth:
     sampler:
       percentage: 1
