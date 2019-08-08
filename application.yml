@@ -19,8 +19,14 @@ ribbon:
   ConnectTimeout: 5000
 
 spring:
-  rabbitmq:
-    host: rabbitmq
+  host: 127.0.0.1
+        port: 5672
+        username: guest
+        password: guest
+        listener:
+          concurrency: 10
+          max-concurrency: 20
+          prefetch: 5
   sleuth:
     sampler:
       percentage: 1
